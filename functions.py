@@ -1,4 +1,4 @@
-import os
+from os import path
 from datetime import datetime
 
 
@@ -10,7 +10,7 @@ def converter_data(data_str):
 
 
 def carregar_dados(path_arq, dict_db):
-    if os.path.exists(path_arq):
+    if path.exists(path_arq):
         with open(path_arq, 'r', encoding='utf-8') as arq:
             for i, linha in enumerate(arq):
                 dados = linha.strip().split(";")

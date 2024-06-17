@@ -1,10 +1,10 @@
-import os
+from os import system
 from functions import *
 
 
 def menu():
     while True:
-        os.system('cls' if os.name == 'nt' else 'clear')
+        system('cls' if os.name == 'nt' else 'clear')
         print("--- Menu ---")
         print("1 – Mostrar o total e a porcentagem de óbitos por bairro")
         print("2 – Mostrar a data em que foi notificado o primeiro caso de Covid-19")
